@@ -22,10 +22,10 @@ A demo of this project is available at:
 
 Dependencies list:
 
-> npm
-> d3
-> create-react-app
-> serve
+> 1. npm
+> 2. d3
+> 3. create-react-app
+> 4. serve
 
 First clone this repo
 
