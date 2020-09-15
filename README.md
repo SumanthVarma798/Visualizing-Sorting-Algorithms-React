@@ -22,8 +22,9 @@ A demo of this project is available at:
 
 > 1. npm
 > 2. d3
-> 3. create-react-app
-> 4. serve
+> 3. React
+> 4. create-react-app
+> 5. serve
 
 ## To run this project locally
 

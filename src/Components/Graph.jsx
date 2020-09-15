@@ -54,7 +54,7 @@ class Graph extends Component {
 
     const [dataArray, timeComplexity] = result;
 
-    const renderGraph = (dJoin, Data) => {
+    const renderGraph = (dJoin, Data, fillColor) => {
       const barWidth = Math.floor(width / Data.length) - 5;
       dJoin
         .selectAll("rect")
@@ -65,11 +65,11 @@ class Graph extends Component {
         .attr("height", (d) => yScale(d))
         .attr("width", barWidth)
         .attr("rx", 3)
-        .attr("fill", "orange")
         .attr("opacity", 0.8)
         .merge(dJoin.selectAll("rect").data(Data, (d) => d))
         .transition()
         .duration(1000)
+        .attr("fill", fillColor)
         .attr("x", (d, i) => xScale(i));
       dJoin
         .selectAll("rect")
@@ -83,7 +83,8 @@ class Graph extends Component {
 
     for (let i = 0; i < dataArray.length; i++) {
       setTimeout(() => {
-        renderGraph(svg, dataArray[i]);
+        if (i <= dataArray.length - 2) renderGraph(svg, dataArray[i], "Orange");
+        else renderGraph(svg, dataArray[i], "green");
       }, i * 1000);
     }
 
