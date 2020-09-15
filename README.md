@@ -6,12 +6,12 @@ It is deployed on _Heroku_ cloud.
 
 This project is built to visualize the following common sorting algorithms:
 
-> Bubble Sort
-> Insertion Sort
-> Selection Sort
-> Merge Sort
-> Quick Sort
-> Heap Sort
+> - Bubble Sort
+> - Insertion Sort
+> - Selection Sort
+> - Merge Sort
+> - Quick Sort
+> - Heap Sort
 
 ## Demo
 
