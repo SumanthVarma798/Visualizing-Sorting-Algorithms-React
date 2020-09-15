@@ -18,14 +18,14 @@ This project is built to visualize the following common sorting algorithms:
 A demo of this project is available at:
 ***https://sortingviz.herokuapp.com/***
 
-## To run this project locally
-
-Dependencies list:
+### Dependencies list:
 
 > 1. npm
 > 2. d3
 > 3. create-react-app
 > 4. serve
+
+## To run this project locally
 
 First clone this repo
 
