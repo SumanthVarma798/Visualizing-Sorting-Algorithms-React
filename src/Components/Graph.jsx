@@ -92,9 +92,9 @@ class Graph extends Component {
 
     svg
       .append("g")
-      .attr("transform", `translate(0, ${height + 15})`)
+      .attr("transform", `translate(0, ${height + 10})`)
       .call(xAxis);
-    svg.append("g").attr("transform", "translate(-15, 0)").call(yAxis);
+    svg.append("g").attr("transform", "translate(-10, 0)").call(yAxis);
 
     svg
       .append("text")
